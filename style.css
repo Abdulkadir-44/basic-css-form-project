@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+}
+.main-wrapper{
+    padding: 0 1rem;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #6C63FF;
+}
+
+.image{
+    position: relative;
+    width: 300px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.login-container{
+    position: relative;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.login-container h3{
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;   
+    color: rgb(56, 55, 55);
+}
+.login-container > div{
+    width: 100%;
+}
+.input-wrapper{
+    display: grid;
+    grid-template-columns: 8% 92%;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+.input-wrapper input{
+    padding: 4px;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: none;
+    color: rgb(92, 90, 90);
+}
+.input-wrapper i{
+    color: #6C63FF;
+    opacity: 0.6;
+}
+.input-wrapper i:hover{
+    color:black;
+}
+
+.login-container a{
+    outline: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;   
+    display: block;
+    text-align: right;
+    color: rgb(92, 90, 90);
+    transition: .1s;
+}
+.login-container a:hover{
+    color: #6C63FF;
+}
+.input-wrapper.two{
+    margin-bottom: 2px;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: #6C63FF;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background: #26209e;
+}
